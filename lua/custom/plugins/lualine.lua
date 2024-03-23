@@ -10,7 +10,7 @@
 -- Color table for highlights
 -- stylua: ignore
 local colors = {
-  bg       = '#1a1b26',
+  bg       = '#3a3b47',
   fg       = '#bbc2cf',
   yellow   = '#ECBE7B',
   cyan     = '#008080',
@@ -136,7 +136,7 @@ ins_left { 'location' }
 ins_left {
   'diagnostics',
   sources = { 'nvim_diagnostic' },
-  symbols = { error = '!!', warn = '!', info = 'i' },
+  symbols = { error = '‼', warn = '⁈', info = '⊙' },
   diagnostics_color = {
     color_error = { fg = colors.red },
     color_warn = { fg = colors.yellow },
