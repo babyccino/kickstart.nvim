@@ -12,17 +12,6 @@ local fmt = { -- Autoformat
         lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
       }
     end,
-    formatters_by_ft = {
-      lua = { 'stylua' },
-      -- Conform can also run multiple formatters sequentially
-      -- python = { "isort", "black" },
-      --
-      -- You can use a sub-list to tell conform to run *until* a formatter
-      go = { 'goimports', 'gofmt' },
-      -- is found.
-      -- javascript = { { 'prettierd', 'prettier' } },
-      -- typescript = { { 'prettierd', 'prettier' } },
-    },
   },
 }
 return fmt

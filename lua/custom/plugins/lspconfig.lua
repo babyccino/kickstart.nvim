@@ -27,19 +27,12 @@ local lspconfig = { -- LSP Configuration & Plugins
         -- JS/TS formatting
         null_ls.builtins.formatting.prettierd,
         -- Spell check
-        --null_ls.builtins.diagnostics.cspell,
-        -- Python formatting
-        null_ls.builtins.formatting.autopep8.with {
-          extra_args = {
-            'max-line-length',
-            '79',
-            'aggressive',
-            'aggressive',
-            'aggressive',
-          },
-        },
+        null_ls.builtins.diagnostics.cspell,
         -- Lua formatting
         null_ls.builtins.formatting.stylua,
+        -- Golang
+        null_ls.builtins.formatting.gopls,
+        null_ls.builtins.formatting.goimports,
       },
       root_dir = lspconfig.util.root_pattern('yarn.lock', 'lerna.json', '.git'),
       --debug = true,
